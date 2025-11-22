@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anki Dashboard</title>
+  <link rel="icon" type="svg" href="assets/ssshape.svg">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/dashboard.css">
+  <script src="login-script.js" defer></script>
+</head>
+<body>
+  <!-- 3. Welcome Screen -->
+    <section id="screen-welcome" class="screen active screen-welcome">
+        <h2 class="title">Welcome, <span id="welcome-user-name">User</span>!</h2>
+        <p class="subtitle">You have successfully logged in/registered.</p>
+        <p class="small-text">This is your main dashboard placeholder.</p>
+        <div class="navigation">
+          <ul class="nav">
+            <li>Deck</li>
+            <li>Add</li>
+            <li>Browse</li>
+            <li>Stats</li>
+            <li>Sync</li>
+          </ul>
+        </div>
+
+        <div class="main">
+          <div class="main-deck">
+            <div class="deck">
+              <ul class="deck-list">
+                <li>Deck</li>
+                <li>New</li>
+                <li>Learn</li>
+                <li>Due</li>
+              </ul>
+            </div>
+            <div class="stats">
+              <div class="stats-data">
+                <p style="color: #fff" class="stats-name">+ Modern Stats Dashboard - v2</p>
+                <p style="color: rgb(56, 55, 55);">0</p>
+                <p style="color: green;">31</p>
+                <p style="color: red">197</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="boxes">
+          <div class="box1"></div>
+          <div class="box2"></div>
+          <div class="box3"></div>
+        </div> -->
+
+
+        <div class="boxes">
+          <div class="box1 summary-card"></div>
+          <div class="box2 summary-card"></div>
+          <div class="box3 summary-card"></div>
+        </div>
+
+
+        <div class="setting">
+          <div class="choice">
+            <div class="share">
+              <p>Get Shared</p>
+            </div>
+            <div class="create">
+              <p>Create Deck</p>
+            </div>
+            <div class="import">
+              <p>Import File</p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <div class="loader"></div>
+    <script>
+      window.onload = () => {
+        const name = localStorage.getItem('welcomeName') || "User";
+        document.getElementById('welcome-user-name').textContent = name;
+      }
+</script>
+</body>
+</html>
