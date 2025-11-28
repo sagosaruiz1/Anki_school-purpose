@@ -2,10 +2,10 @@
 
 <div>
   <h2>Members:</h2>
-  <h3>Sagosa, Ruiz M. -- Designer/Programmer</h3>
-  <h3>Herrero, Jerson Carl N. -- Designer/Programmer</h3>
-  <h3>Cadelina, Mark Eleazer -- </h3>
-  <h3>Cabilogan, Ian Carlos -- </h3>
+  <h3>Sagosa, Ruiz M. -- Front-End Developer</h3>
+  <h3>Herrero, Jerson Carl N. -- Back-End Develope</h3>
+  <h3>Cadelina, Mark Eleazer -- Dcomentator</h3>
+  <h3>Cabilogan, Ian Carlos -- Documentator</h3>
 </div>
 
 ##
